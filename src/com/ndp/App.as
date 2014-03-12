@@ -236,11 +236,11 @@ package com.ndp
 			var desktopFolder:File = File.desktopDirectory.resolvePath(".");
 			var row:int = 0;
 			var col:int = 0;
-			while (posY + h < heightBD)
+			while (posY + h <= heightBD)
 			{
 				posX = m;
 				col = 0;
-				while (posX + w < widthBD)
+				while (posX + w <= widthBD)
 				{
 					rec.x = posX;
 					rec.y = posY;
@@ -304,11 +304,11 @@ package com.ndp
 			var posX:int = 0;
 			var rec:Rectangle = new Rectangle();
 			var img:Image = new Image(Texture.empty(w, h));
-			while (posY + h < heightBD)
+			while (posY + h <= heightBD)
 			{
 				posX = m;
 				drawX = 0;
-				while (posX + w < widthBD)
+				while (posX + w <= widthBD)
 				{
 					rec.x = posX;
 					rec.y = posY;
